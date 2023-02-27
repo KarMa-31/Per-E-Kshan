@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="sample.QuizController" xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: orange" fx:id="MainPane">
+
+    <center>
+
+        <GridPane hgap="10" vgap="10">
+
+            <fx:define>
+                <ToggleGroup fx:id="optionToggleGroup"/>
+            </fx:define>
+
+            <Label
+                    text="Question 2. Which keyword among the following can be used to declare an array of objects in java?" GridPane.rowIndex="0" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optA" onAction="#onRadioCheck2" text="A. new"
+                         GridPane.rowIndex="1"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optB" onAction="#onRadioCheck2" text="B. create"
+                         GridPane.rowIndex="2" toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optC" onAction="#onRadioCheck2" text="C. allocate"
+                         GridPane.rowIndex="3"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optD" onAction="#onRadioCheck2" text="D. arr" GridPane.rowIndex="4"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+
+
+
+
+        </GridPane>
+
+
+    </center>
+
+
+
+
+</BorderPane>

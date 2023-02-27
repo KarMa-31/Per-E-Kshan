@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:controller="sample.ScoreController" xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: orange" fx:id="MainPane">
+
+
+
+    <center>
+
+        <VBox spacing="10" alignment="CENTER">
+
+
+
+            <Label text="Thank you for taking the Quiz. Your Quiz is Over Now">
+                <font>
+                    <Font size="30"/>
+                </font>
+            </Label>
+
+            <Button text="Get Score" onAction="#setScoreLabel" prefHeight="60" prefWidth="90"/>
+
+            <Label fx:id="scoreLabel" text="" textFill="white">
+                <font>
+                    <Font size="50"/>
+                </font>
+            </Label>
+
+
+        </VBox>
+
+    </center>
+
+    <right>
+        <Button fx:id="homeButton" onAction="#handleHomeButton" text="HOME"
+                BorderPane.alignment="BOTTOM_RIGHT">
+            <graphic>
+                <ImageView>
+                    <Image url="@/toolbarButtonGraphics/navigation/Forward24.gif"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </right>
+
+    <bottom>
+        <VBox alignment="CENTER">
+            <Label text="β - BETA Version" style="-fx-font-size: 14"/>
+            <Label text="Copyrights © 2021 Per-E-Kshan.Inc"/>
+            <Label text="All Rights Reserved"/>
+        </VBox>
+    </bottom>
+
+
+</BorderPane>

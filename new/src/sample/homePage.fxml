@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane fx:controller="sample.HomePageController" xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: orange" fx:id="HomePane">
+
+    <top>
+        <VBox alignment="CENTER">
+            <ImageView fx:id="imageView"
+                       fitHeight="300.0"
+                       fitWidth="300.0"
+                       layoutX="61.0"
+                       layoutY="83.0"
+                       pickOnBounds="true"
+                       preserveRatio="true">
+                <image>
+                    <Image url="E:/College/Sem - 3/OOP/Innovative/new/Logo/Logo.PNG"/>
+                </image>
+            </ImageView>
+
+<!--            <Label text="Home Page" BorderPane.alignment="TOP_CENTER" textFill="white"-->
+<!--                   style="-fx-border-color: white; -fx-border-width: 3; -fx-border-style: solid">-->
+            <Label text="Home Page" textFill="white">
+                <font>
+                    <Font name="Times New Roman" size="70"/>
+                </font>
+            </Label>
+        </VBox>
+    </top>
+
+    <center>
+
+        <HBox alignment="CENTER" spacing="40">
+
+            <Button fx:id="quizButton" onAction="#handleQuizButton" text="Quiz" prefWidth="90"
+                     prefHeight="90"/>
+            <Button fx:id="timerButton" onAction="#handleTimerButton" text="Timer"
+                     prefWidth="90" prefHeight="90"/>
+            <Button fx:id="blogButton" onAction="#handleBlogButton" text="Blog" prefWidth="90"
+                    prefHeight="90"/>
+
+        </HBox>
+
+    </center>
+
+    <left>
+        <Button fx:id="logoutButton" onAction="#handleLogoutButton" text="Logout"
+                BorderPane.alignment="BOTTOM_RIGHT">
+            <graphic>
+                <ImageView>
+                    <Image url="@/toolbarButtonGraphics/navigation/Back24.gif"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </left>
+
+    <right>
+        <Button fx:id="exitButton" onAction="#handleExitButton" text="EXIT"
+                BorderPane.alignment="BOTTOM_RIGHT">
+            <graphic>
+                <ImageView>
+                    <Image url="@/toolbarButtonGraphics/navigation/Forward24.gif"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </right>
+
+
+    <bottom>
+        <VBox alignment="CENTER">
+            <Label text="β - BETA Version" style="-fx-font-size: 14"/>
+            <Label text="Copyrights © 2021 Per-E-Kshan.Inc"/>
+            <Label text="All Rights Reserved"/>
+        </VBox>
+    </bottom>
+
+
+
+
+</BorderPane>

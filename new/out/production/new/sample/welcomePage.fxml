@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane fx:controller="sample.WelcomeController" xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: white" fx:id="WelcomePane">
+
+    <!--    <top>-->
+    <!--        <ImageView>-->
+    <!--            <image>-->
+    <!--                <Image url="E:/College/Sem - 3/OOP/Innovative/ProjectINNO/src/Resources/Logo.png"/>-->
+    <!--            </image>-->
+    <!--        </ImageView>-->
+    <!--    </top>-->
+
+    <center>
+
+        <VBox alignment="CENTER" spacing="10">
+
+            <Label text="Welcome!"
+                   textFill="Black" >
+                <font>
+                    <Font name="Comic Sans MS" size="50" />
+                </font>
+            </Label>
+
+            <GridPane alignment="CENTER" hgap="10" vgap="10">
+
+                <Button fx:id="existingUserButton" onAction="#handleExistingUser"
+                        text="Existing User"
+                        GridPane.rowIndex="0"
+                        GridPane.columnIndex="0"/>
+
+                <Button fx:id="newUserButton" onAction="#handleNewUser" text="New User"
+                        GridPane.rowIndex="0"
+                        GridPane.columnIndex="1"/>
+
+
+            </GridPane>
+
+        </VBox>
+
+    </center>
+
+    <right>
+        <Button fx:id="exitButton" onAction="#handleExitButton" text="EXIT"
+                BorderPane.alignment="BOTTOM_RIGHT">
+            <graphic>
+                <ImageView>
+                    <Image url="@/toolbarButtonGraphics/navigation/Forward24.gif"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+    </right>
+
+    <bottom>
+        <VBox alignment="CENTER">
+            <Label text="Copyrights © 2021 Per-E-Kshan.Inc"/>
+            <Label text="All Rights Reserved"/>
+        </VBox>
+    </bottom>
+
+</BorderPane>

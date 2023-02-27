@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="sample.QuizController" xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: orange" fx:id="MainPane">
+
+    <center>
+
+        <GridPane hgap="10" vgap="10">
+
+            <fx:define>
+                <ToggleGroup fx:id="optionToggleGroup"/>
+            </fx:define>
+
+            <Label text="Question 3. Why do we need to handle exceptions?" GridPane.rowIndex="0" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optA" onAction="#onRadioCheck3" text="A. To prevent abnormal termination of program" GridPane.rowIndex="1"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optB" onAction="#onRadioCheck3" text="B. To encourage exception prone program" GridPane.rowIndex="2"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optC" onAction="#onRadioCheck3" text="C. To avoid syntax errors" GridPane.rowIndex="3"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optD" onAction="#onRadioCheck3" text="D. To save memory" GridPane.rowIndex="4"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+
+
+
+        </GridPane>
+
+
+    </center>
+
+
+
+
+</BorderPane>

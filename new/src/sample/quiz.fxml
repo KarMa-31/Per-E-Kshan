@@ -1,0 +1,164 @@
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleButton?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<BorderPane fx:controller="sample.QuizController" xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: orange" fx:id="MainPane">
+
+    <top>
+        <Label text="Quiz" BorderPane.alignment="CENTER" textFill="white">
+            <font>
+                <Font name="Times New Roman" size="70"/>
+            </font>
+        </Label>
+    </top>
+
+    <left>
+        <GridPane>
+            <!--            <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="Left Label"-->
+            <!--                   alignment="center"/>-->
+
+            <!--            <fx:define>-->
+            <!--                <ToggleGroup fx:id="colorToggleGroup"/>-->
+            <!--            </fx:define>-->
+
+            <!--            <VBox GridPane.rowIndex="0" GridPane.columnIndex="1">-->
+            <!--                <RadioButton  text="Red"-->
+            <!--                             toggleGroup="$colorToggleGroup" selected="true"/>-->
+            <!--                <RadioButton  text="Blue"-->
+            <!--                             toggleGroup="$colorToggleGroup"/>-->
+            <!--                <RadioButton text="Green" toggleGroup="$colorToggleGroup"/>-->
+
+            <!--            </VBox>-->
+
+
+        </GridPane>
+    </left>
+    <!--    <right>-->
+    <!--        <Label text="Right Label" alignment="center"/>-->
+    <!--    </right>-->
+    <center>
+
+        <GridPane hgap="10" vgap="10">
+<!--            <fx:define>-->
+<!--                <ToggleGroup fx:id="optionToggleGroup"/>-->
+<!--            </fx:define>-->
+            <Label text="Please Select a Question" GridPane.columnIndex="0" GridPane.rowIndex="0"
+                   fx:id="questionStatement" style="-fx-font-size: 20"/>
+<!--            <RadioButton GridPane.columnIndex="0" GridPane.rowIndex="1" text="Loading..."-->
+<!--                         fx:id="optA"/>-->
+<!--            <RadioButton GridPane.columnIndex="0" GridPane.rowIndex="2" text="Loading..."-->
+<!--                         toggleGroup="$optionToggleGroup" fx:id="optB"/>-->
+<!--            <RadioButton GridPane.columnIndex="0" GridPane.rowIndex="3" text="Loading..."-->
+<!--                         toggleGroup="$optionToggleGroup" fx:id="optC"/>-->
+<!--            <RadioButton GridPane.columnIndex="0" GridPane.rowIndex="4" text="Loading..."-->
+<!--                         toggleGroup="$optionToggleGroup" fx:id="optD"/>-->
+
+        </GridPane>
+
+        <!--        <GridPane>-->
+
+        <!--            <Label GridPane.rowIndex="0" GridPane.columnIndex="0" text="Enter Name: "/>-->
+        <!--            <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>-->
+
+        <!--            <Button fx:id="helloButton" GridPane.rowIndex="1" GridPane.columnIndex="0"-->
+        <!--                    text="Say Hello"-->
+        <!--                onAction="#onButtonClick"/>-->
+        <!--            <Button fx:id="byeButton" GridPane.rowIndex="1" GridPane.columnIndex="1" text="Say Bye"-->
+        <!--                onAction="#onButtonClick"/>-->
+
+        <!--            <CheckBox fx:id="checkBox" GridPane.rowIndex="2" GridPane.columnIndex="0"-->
+        <!--                      text="Subscribe to newsletter"/>-->
+        <!-- -->
+
+        <!--        </GridPane>-->
+
+        <!--        <Label text="Center Label" alignment="center">-->
+        <!--            <graphic>-->
+        <!--                <ImageView>-->
+        <!--                    <Image url="@/toolbarButtonGraphics/general/Help24.gif"/>-->
+        <!--                </ImageView>-->
+        <!--            </graphic>-->
+        <!--        </Label>-->
+    </center>
+
+    <right>
+
+        <GridPane>
+            <Label GridPane.rowIndex="0" text="Question Panel" style="-fx-font-size: 20"/>
+            <HBox GridPane.rowIndex="1" spacing="10">
+                <padding>
+                    <Insets bottom="10" right="10"/>
+                </padding>
+                <Button fx:id="button1" text="1" onAction="#onButton1Click"/>
+                <Button fx:id="button2" text="2" onAction="#onButton2Click"/>
+                <Button fx:id="button3" text="3" onAction="#onButton3Click"/>
+            </HBox>
+
+            <HBox GridPane.rowIndex="2">
+                <Button fx:id="submitButton" onAction="#handleSubmitButton" text="Submit"/>
+            </HBox>
+
+
+        </GridPane>
+
+    </right>
+
+    <bottom>
+        <HBox spacing="10" alignment="TOP_RIGHT">
+
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+
+            <Button fx:id="exitButton" onAction="#handleExitButton" text="EXIT">
+                <graphic>
+                    <ImageView>
+                        <Image url="@/toolbarButtonGraphics/navigation/Forward24.gif"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+
+
+            <!--            <Button text="Idea" prefWidth="90">-->
+            <!--                <graphic>-->
+            <!--                    <ImageView>-->
+            <!--                        <Image url="@/toolbarButtonGraphics/general/TipOfTheDay24.gif"/>-->
+            <!--                    </ImageView>-->
+            <!--                </graphic>-->
+            <!--            </Button>-->
+            <!--            <ToggleButton text="Cancel" prefWidth="90"/>-->
+            <!--            <Button text="Help" prefWidth="90"/>-->
+
+            <!--    <padding>-->
+            <!--        <Insets top="10"/>-->
+            <!--    </padding>-->
+
+            <!--    <Label text = " Welcome to JavaFX!" textFill="green" GridPane.columnSpan="2">-->
+            <!--        <font>-->
+            <!--            <Font name="Times New Roman bold" size="70"/>-->
+            <!--        </font>-->
+            <!--    </Label>-->
+
+
+
+
+        </HBox>
+    </bottom>
+
+</BorderPane>

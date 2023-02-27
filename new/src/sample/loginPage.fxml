@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane fx:controller="sample.LoginController" xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: white" fx:id="LoginPane">
+
+    <top>
+        <ImageView BorderPane.alignment="CENTER" fx:id="imageView"
+                   fitHeight="300.0"
+                   fitWidth="300.0"
+                   layoutX="61.0"
+                   layoutY="83.0"
+                   pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="E:/College/Sem - 3/OOP/Innovative/new/Logo/Logo.PNG"/>
+            </image>
+        </ImageView>
+    </top>
+
+    <center>
+
+        <VBox alignment="CENTER" spacing="10">
+
+            <Label text="Login..."
+                   textFill="Black" >
+                <font>
+                    <Font name="Comic Sans MS" size="50" />
+                </font>
+            </Label>
+
+            <GridPane alignment="CENTER" hgap="10" vgap="10">
+
+                <Label text="Username" GridPane.rowIndex="1"
+                       GridPane.columnIndex="0"
+                       GridPane.halignment="CENTER"/>
+                <TextField fx:id="userName" GridPane.rowIndex="1" GridPane.columnIndex="1"
+                           GridPane.halignment="CENTER"/>
+
+                <Label text="Password" GridPane.rowIndex="2" GridPane.columnIndex="0"
+                       GridPane.halignment="CENTER"/>
+                <PasswordField fx:id="pwd" GridPane.rowIndex="2" GridPane.columnIndex="1"
+                               GridPane.halignment="CENTER"/>
+
+                <Button fx:id="signIn" onAction="#handleSignIn" text="Sign In" GridPane.rowIndex="4"
+                        GridPane.columnIndex="0"
+                        GridPane.halignment="CENTER">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/toolbarButtonGraphics/navigation/Forward24.gif"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="signUp" text="Sign Up" onAction="#handleSignUp" GridPane.rowIndex="4"
+                        GridPane.columnIndex="1"
+                        GridPane.halignment="CENTER">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/toolbarButtonGraphics/navigation/Up24.gif"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+            </GridPane>
+
+        </VBox>
+
+    </center>
+
+    <left>
+        <Button fx:id="backButton" onAction="#handleBackButton" text="BACK" BorderPane.alignment="BOTTOM_RIGHT">
+            <graphic>
+                <ImageView>
+                    <Image url="@/toolbarButtonGraphics/navigation/Back24.gif"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </left>
+
+    <right>
+        <Button fx:id="exitButton" onAction="#handleExitButton" text="EXIT"
+                BorderPane.alignment="BOTTOM_RIGHT">
+            <graphic>
+                <ImageView>
+                    <Image url="@/toolbarButtonGraphics/navigation/Forward24.gif"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </right>
+
+    <bottom>
+        <VBox alignment="CENTER">
+            <Label text="β - BETA Version" style="-fx-font-size: 14"/>
+            <Label text="Copyrights © 2021 Per-E-Kshan.Inc"/>
+            <Label text="All Rights Reserved"/>
+        </VBox>
+    </bottom>
+
+</BorderPane>

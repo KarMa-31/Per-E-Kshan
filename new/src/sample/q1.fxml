@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="sample.QuizController" xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color: orange" fx:id="MainPane">
+
+    <center>
+
+        <GridPane hgap="10" vgap="10">
+
+            <fx:define>
+                <ToggleGroup fx:id="optionToggleGroup"/>
+            </fx:define>
+
+            <Label
+                    text="Question 1.  Which among the following is called first, automatically, whenever an object is created?" GridPane.rowIndex="0" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optA" onAction="#onRadioCheck1" text="A. Class"
+                         GridPane.rowIndex="1"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optB" onAction="#onRadioCheck1" text="B. Constructor"
+                         GridPane.rowIndex="2" toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optC" onAction="#onRadioCheck1" text="C. New"
+                         GridPane.rowIndex="3"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+            <RadioButton fx:id="optD" onAction="#onRadioCheck1" text="D. Trigger"
+                         GridPane.rowIndex="4"
+                         toggleGroup="$optionToggleGroup" style="-fx-font-size: 20"/>
+
+
+
+        </GridPane>
+
+
+    </center>
+
+
+
+
+</BorderPane>

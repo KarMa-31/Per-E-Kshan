@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BlogController">
+    <center>
+        <VBox alignment="CENTER">
+            <TextField disable="false" style="-fx-font-size: 20" alignment="CENTER" editable="false"
+                       layoutX="177.0" layoutY="14.0"
+                        prefHeight="25.0" prefWidth="251.0" text="How to concentrate in studies">
+                <font>
+                    <Font size="17.0" />
+                </font>
+            </TextField>
+            <TextArea editable="false" layoutX="2.0" layoutY="61.0" prefHeight="750.0"
+                      prefWidth="583.0" text="      Why do you want to concentrate upon something? You are not interested in concentration; you are only &#10;interested in producing the best results that you can. This starts with student life – that is the time when &#10;everyone is talking about concentration, and that is one thing that they do not have! Especially during &#10;examination time, all your concentration disappears. If you go and sit in the cinema theater, you are totally&#10;focused; if you sit with a textbook, your mind is so distracted, flying in a hundred different ways.&#10;&#10;      If you forcefully concentrate you will become like a concentration camp. You will become suffering. &#10;Instead of relaxing into life, why do you want to make life into a struggle? You will see if you lie down on &#10;your bed in a very relaxed way and read some novel – some love story or suspense thriller – you read at the&#10;rate of 70-80 pages per hour but remember every word. If examinations are about these books, you know &#10;where you will stand. But with the other book why is there so much struggle? The textbook has been &#10;created for an average intelligence; it is a common prescription for everyone.  It is never written in such a &#10;way that only brilliant people can understand. So it is not the question of your capability, it is just the &#10;question of your involvement.&#10;&#10;      First of all, you are not really interested in educating yourself. You are only educating yourself because &#10;it will bring money,  survival, and so many other things that you are dreaming of. If you read this textbook &#10;with the same involvement that you read a suspense thriller, you will see that you will remember every &#10;word that is written. You just have to fall in love with it, that’s all.&#10;&#10;     &quot; So it is not the question of your capability, it is just the question of your involvement. &quot; &#10;&#10;     Think of something more than survival, of doing something beautiful. Even if you don’t do it, at least &#10;think of doing it – it elevates you. If a thousand people think about it, at least ten people will do it. As &#10;you get old, you will become more and more of a coward. You will call this cautiousness, but you are &#10;just afraid of life. At least when you are young, you can dare to do something which is not necessarily &#10;safe, but is beautiful to do for you and the people around you. You must live your life always young. &#10;Don’t think “young” means fifteen years or eighteen years. After all you will die very young – 50, 60, 70, &#10;100 or 160 years, is still very young compared to the existence. It is just a few years. " >
+                <font>
+                    <Font size="18"/>
+                </font>
+            </TextArea>
+            <Button alignment="CENTER" fx:id="backButton" onAction="#handleBackButton" text="Back"/>
+        </VBox>
+    </center>
+</BorderPane>
